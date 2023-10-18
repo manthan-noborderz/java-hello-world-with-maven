@@ -22,7 +22,6 @@
            </dependency>
        </dependencies>
        <!-- end::joda[] -->
-#Distribution Management and Authentication
     <distributionManagement>
     <snapshotRepository>
         <id>nexus-snapshots</id>
@@ -32,7 +31,6 @@
     <build>
         <plugins>
             <plugin>
-            ####GPG Signed Components
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.5</version>
@@ -45,7 +43,6 @@
                     </goals>
                     </execution>
                 </executions>
-            ####Javadoc and Sources Attachments
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>2.2.1</version>
@@ -70,7 +67,6 @@
                     </goals>
                     </execution>
                 </executions>
-                ######Distribution Management and Authentication
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>1.6.7</version>
